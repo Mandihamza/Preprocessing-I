@@ -1,0 +1,23 @@
+.wrapper (@align: center;){
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: @align;
+}
+
+.nav-button {
+  color: hotpink;
+  font-size: 18px;
+  text-decoration: none;
+  border: solid hotpink 1px;
+  padding: 10px;
+  margin: 10px;
+
+  &:hover {
+    color: darken(hotpink, 30%);
+    background: hotpink;
+    border-color: white;
+    color: white;
+  }
+
+}

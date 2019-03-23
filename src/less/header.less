@@ -1,0 +1,52 @@
+header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background: @primaryColor;
+  border-radius: 5px;
+  margin: 5px;
+
+
+  nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  nav a  {
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    border: solid @secondaryColor 1px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    color: @linkColor;
+
+    &:hover {
+      color: darken(@linkColor, 10%)
+    }
+  }
+
+  nav a:first-child {
+    .nav-button;
+    margin: auto;
+  }
+
+  @media @phone {
+    flex-direction: column;
+
+    nav {
+      justify-content: space-between;
+      padding: 10px;
+    }
+    nav a {
+      width: 100%;
+      margin: 5px auto;
+    }
+
+  }
+}
